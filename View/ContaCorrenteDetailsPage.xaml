@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:AndreasBank.Model"
+             xmlns:viewmodel="clr-namespace:AndreasBank.ViewModel"
+             x:DataType="viewmodel:ContaCorrenteDetailsViewModel"
+             x:Class="AndreasBank.View.ContaCorrenteDetailsPage"
+             Title="ContaCorrenteDetailsPage">
+    <VerticalStackLayout>
+        <Label
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+        <Label Text="Código: "/>
+        <Entry Text="{Binding ContaCorrente.Numero}"
+               MaxLength="4"
+               Placeholder="0000"
+               ClearButtonVisibility="WhileEditing"/>
+        <Label Text="Nome: "/>
+        <Entry Text="{Binding ContaCorrente.Saldo}"
+               MaxLength="20"
+               Placeholder="Digite o nome do cliente"
+               ClearButtonVisibility="WhileEditing"
+               TextTransform="Uppercase"/>
+        <Button Text="Salvar"
+                Command="{Binding PostContaCorrenteCommand}"
+                IsEnabled="{Binding IsNotBusy}"
+                Grid.Row="1"
+                Margin="8"/>
+    </VerticalStackLayout>
+</ContentPage>

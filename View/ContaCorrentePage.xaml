@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:AndreasBank.Model"
+             xmlns:viewmodel="clr-namespace:AndreasBank.ViewModel"
+             x:DataType="viewmodel:ContaCorrentePageViewModel"
+             x:Class="AndreasBank.View.ContaCorrentePage"
+             Title="{Binding Title}">
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions="*,*"
+              ColumnSpacing="5"
+              RowDefinitions="*,Auto"
+              RowSpacing="0">
+
+            <CollectionView Grid.ColumnSpan="3"
+                            ItemsSource="{Binding ContasCorrente}"
+                            SelectionMode="Single"
+                            SelectedItem="{Binding ContaCorrente}">
+                <CollectionView.Header>
+                    <Frame Margin="10"
+                            HeightRequest="130">
+                        <HorizontalStackLayout>
+                            <Frame>
+                                <Label Text="Número: "/>
+                            </Frame>
+                            <Frame>
+                                <Label Text="Saldo: "/>
+                            </Frame>
+                            <Frame>
+                                <Label Text="Ativo: "/>
+                            </Frame>
+                            <Frame>
+                                <Label Text="Limite: "/>
+                            </Frame>
+                            <Frame>
+                                <Label Text="Taxa de Manutenção: "/>
+                            </Frame>
+                        </HorizontalStackLayout>
+                    </Frame>
+                </CollectionView.Header>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:ContaCorrente">
+                        <Grid Padding="10">
+                            <Frame HeightRequest="130">
+                                <HorizontalStackLayout>
+                                    <HorizontalStackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer NumberOfTapsRequired="2"
+                                                              Command="{Binding GoToContaCorrenteDetailsPostCommand, Source={RelativeSource AncestorType={x:Type viewmodel:ContaCorrentePageViewModel}}}"
+                                                              CommandParameter="{Binding Id}">
+                                        </TapGestureRecognizer>
+                                    </HorizontalStackLayout.GestureRecognizers>
+                                    <Frame>
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding Numero}"/>
+                                        </HorizontalStackLayout>
+                                    </Frame>
+                                    <Frame>
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding Saldo}"/>
+                                        </HorizontalStackLayout>
+                                    </Frame>
+                                    <Frame>
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding IsAtivo}"/>
+                                        </HorizontalStackLayout>
+                                    </Frame>
+                                    <Frame>
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding Limite}"/>
+                                        </HorizontalStackLayout>
+                                    </Frame>
+                                    <Frame>
+                                        <HorizontalStackLayout>
+                                            <Label Text="{Binding TaxaManutencao}"/>
+                                        </HorizontalStackLayout>
+                                    </Frame>                                    
+                                    <Frame>
+                                        <Button Text="Excluir"
+                                                Command="{Binding DeleteContaCorrenteCommand, Source={RelativeSource AncestorType={x:Type viewmodel:ContaCorrentePageViewModel}}}"
+                                                CommandParameter="{Binding Id}"/>
+                                    </Frame>
+                                </HorizontalStackLayout>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+
+
+            <ActivityIndicator IsVisible="{Binding IsBusy}"
+                               IsRunning="{Binding IsBusy}"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.RowSpan="3"
+                               Grid.ColumnSpan="2"/>
+
+        </Grid>
+        <Grid>
+            <HorizontalStackLayout>
+                <Button Text="Incluir"
+                        Command="{Binding GoToContaCorrenteDetailsCommand}"
+                        IsEnabled="{Binding IsNotBusy}"
+                        Grid.Row="1"
+                        Margin="8"/>
+
+                <Button Text="Listar"
+                        Command="{Binding GetContasCorrenteCommand}"
+                        IsEnabled="{Binding IsNotBusy}"
+                        Grid.Row="1"
+                        Margin="8"/>
+            </HorizontalStackLayout>
+        </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>

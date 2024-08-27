@@ -1,0 +1,101 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AndreasBank
+build_property.ProjectDir = C:\Users\andre\vscode-workspace\AndreasBank\AndreasBank\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/View/AgenciaDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.View.AgenciaDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\AgenciaDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\AgenciaDetailsPage.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/View/AgenciaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.View.AgenciaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\AgenciaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\AgenciaPage.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/View/ClienteDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.View.ClienteDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ClienteDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ClienteDetailsPage.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/View/ClientePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.View.ClientePage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ClientePage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ClientePage.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/View/ContaCorrenteDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.View.ContaCorrenteDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ContaCorrenteDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ContaCorrenteDetailsPage.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/View/ContaCorrentePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.View.ContaCorrentePage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ContaCorrentePage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ContaCorrentePage.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/View/ContaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.View.ContaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ContaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ContaPage.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/View/ContaPoupancaDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.View.ContaPoupancaDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ContaPoupancaDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ContaPoupancaDetailsPage.xaml
+
+[C:/Users/andre/vscode-workspace/AndreasBank/AndreasBank/View/ContaPoupancaPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AndreasBank.View.ContaPoupancaPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\ContaPoupancaPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\ContaPoupancaPage.xaml
